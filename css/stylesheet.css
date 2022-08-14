@@ -33,7 +33,7 @@ footer{
     margin-bottom: 5px;
 }
 .hr2{
-    width: 50%;
+    width: 75%;
 }
 .divTopMenu{
     display: flex;
@@ -85,6 +85,10 @@ footer{
 #menuLogo{
     display: none;
 }
+#menuLogo:hover{
+    transition: 1s;
+    transform: scale(110%);
+}
 .menuElement{
     display: flex;
     align-items: center;
@@ -96,6 +100,10 @@ footer{
     text-decoration: none;
     margin-right: 5px;
 }
+.menuElement:hover{
+    transition: 1s;
+    transform: scale(110%);
+}
 #menuLogin{
     display: flex;
     align-items: center;
@@ -106,6 +114,10 @@ footer{
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 5px;
+}
+#menuLogin:hover{
+    transition: 1s;
+    transform: scale(110%);
 }
 .fa-brands.fa-discord.fa-xl{
     display: none;
@@ -226,7 +238,7 @@ footer{
     grid-template-rows: 3;
     grid-template-areas: "footerLogo footerMenu footerSocial" "footerParrafo footerMenu footerSocial" "copyrights copyrights copyrights";
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: black;
     color: whitesmoke;
     height: fit-content;
@@ -343,14 +355,18 @@ footer{
     background-color: white;
     color: rgb(29, 29, 29);
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 0.5rem;
     justify-content: center;
     align-items: center;
     width: fit-content;
     height: fit-content;
-    padding: 3px;
+    padding: 3px 6px 3px 6px;
     border-radius: 5px;
+}
+.eventoInfo:hover{
+    transition: 1s;
+    transform: scale(110%);
 }
 .divReglamento{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -614,9 +630,10 @@ footer{
 .footItem{
     display: flex;
     align-items: center;
-    gap: 5px;
     color: rgb(165, 165, 165);
     font-size: 0.5rem;
+    column-gap: 5px;
+    margin-bottom: 5px;
 }
 .footLink{
     text-decoration: none;
@@ -686,12 +703,6 @@ footer{
     }
     .topLogo{
         display: none;
-    }
-    .fa-brands{
-        border-radius: 22px;
-        height: 22px;
-        width: 22px;
-        margin-right: 5px;
     }
     .divMenuPrincipal{
         display: flex;
@@ -783,6 +794,19 @@ footer{
         width: 60px;
         border-radius: 10px;
     }
+    .eventoTitulo{
+        font-size: 1rem;
+    }
+    .eventoSubtitulo{
+        font-size: 0.65rem;
+    }
+    .eventoLI{
+        font-size: 0.65rem;
+    }
+    .eventoInfo{
+        font-size: 0.65rem;
+        padding: 6px 12px 6px 12px;
+    }
     .divReglamento{
         font-size: 0.75rem;
         width: 90vw;
@@ -829,17 +853,17 @@ footer{
     }
     .footerMenu{
         grid-area: footerMenu;
-        padding: 10px;
     }
     .footerSocial{
         grid-area: footerSocial;
-        padding: 10px;
     }
     #footTitles{
         font-size: 1rem;
     }
     .footItem{
         font-size: 0.65rem;
+        margin-bottom: 10px;
+        column-gap: 10px;
     }
     .copyrights{
         margin-top: 30px;
@@ -934,6 +958,9 @@ footer{
     }
     .hr1{
         margin-bottom: 20px;
+    }
+    .hr2{
+        width: 90%;
     }
     .divTopMenu{
         height: 38px;
@@ -1047,6 +1074,10 @@ footer{
         width: 90px;
         border-radius: 20px;
     }
+    .discordBoton:hover{
+        transition: 1s;
+        transform: scale(110%);
+    }
     .divEventos{
         grid-template-columns: 2;
         grid-template-rows: 1;
@@ -1058,10 +1089,10 @@ footer{
         gap: 40px;
     }
     .divEventosActivos{
-        width: 500px;
+        width: 480px;
     }
     .divEventosPasados{
-        width: 500px;
+        width: 480px;
     }
     .evento{
         width: 100%;
@@ -1074,12 +1105,12 @@ footer{
         margin-bottom: 20px;
     }
     .eventoFinalizado{
-        width: 500px;
+        width: 100%;
         padding: 10px;
         margin-bottom: 20px;
     }
     .racenowFinalizado{
-        width: 500px;
+        width: 100%;
         padding: 10px;
         margin-bottom: 20px;
     }
@@ -1088,9 +1119,8 @@ footer{
         margin-bottom: 3px;
     }
     .eventoInfo{
-        font-size: 0.65rem;
-        width: 100px;
-        height: 25px;
+        font-size: 0.75rem;
+        padding: 5px 10px 5px 10px;
     }
     .divReglamento{
         font-size: 1rem;
@@ -1186,6 +1216,8 @@ footer{
     }
     .footItem{
         font-size: 0.75rem;
+        margin-bottom: 15px;
+        column-gap: 15px;
     }
     .copyrights{
         margin-top: 40px;
